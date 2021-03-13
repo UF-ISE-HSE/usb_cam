@@ -1,15 +1,30 @@
-usb_cam [![Build Status](https://api.travis-ci.org/bosch-ros-pkg/usb_cam.png)](https://travis-ci.org/bosch-ros-pkg/usb_cam)
-=======
+# usb_cam
+This repository is the drive for using usb camera in ros.
 
-#### A ROS Driver for V4L USB Cameras
-This package is based off of V4L devices specifically instead of just UVC.
+## 1. Prerequisites
+### 1.1 **Ubuntu** and **ROS**
+Ubuntu 64-bot 16.04 or 18.04 or 20.04.
+ROS Kinetic or Melodic or Noetic
 
-For full documentation, see [the ROS wiki](http://ros.org/wiki/usb_cam).
+## 2. Build
+Clone the repository and catkin_make:
 
-[Doxygen](http://docs.ros.org/indigo/api/usb_cam/html/) files can be found on the ROS wiki.
+```
+cd ~/catkin_ws/src
+git clone https://github.com/UF-ISE-HSE/usb_cam.git
+cd ../
+catkin_make
+source ~/catkin_ws/devel/setup.bash
+```
 
-### License
-usb_cam is released with a BSD license. For full terms and conditions, see the [LICENSE](LICENSE) file.
+## 3. Parameters
+Update the information in launch/usb_cam-test.launch
 
-### Authors
-See the [AUTHORS](AUTHORS.md) file for a full list of contributors.
+**Note**: video_device should be same as the usb port in the computer.
+
+## 4. Run
+
+```
+roslaunch usb_cam usb_cam-test.launch
+```
+
