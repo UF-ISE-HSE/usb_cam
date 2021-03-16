@@ -5,7 +5,10 @@ This repository is the drive for using usb camera in ros.
 ### 1.1 **Ubuntu** and **ROS**
 Ubuntu 64-bot 16.04 or 18.04 or 20.04.
 ROS Kinetic or Melodic or Noetic
-
+```
+sudo apt-get install ros-$DISTRO-camera-info-manager
+sudo apt-get install ros-$DISTRO-image-transport
+```
 ## 2. Build
 Clone the repository and catkin_make:
 
