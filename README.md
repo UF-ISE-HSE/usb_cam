@@ -8,6 +8,7 @@ ROS Kinetic or Melodic or Noetic
 ```
 sudo apt-get install ros-$DISTRO-camera-info-manager
 sudo apt-get install ros-$DISTRO-image-transport
+sudo apt-get install ros-$DISTRO-image-view
 ```
 ## 2. Build
 Clone the repository and catkin_make:
